@@ -7,6 +7,5 @@ final_address = addr_infos[0].ip_address
 
 get '/' do
   @address = final_address
-  @time = Time.now
   erb :index
 end
