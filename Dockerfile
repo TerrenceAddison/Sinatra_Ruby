@@ -7,5 +7,4 @@ COPY . /Sinatra_Test
 RUN bundle install
 
 # EXPOSE 4567
-
-CMD bundle exec rackup -p $PORT
+CMD bundle exec rackup --host 0.0.0.0 -p $PORT
